@@ -81,7 +81,7 @@
 			{
 				vec3 tex=texture2D(uni_tex0,vec2(var_col.x,1.-var_col.y)).xyz;
 				vec3 nor=normalize((var_mat*vec4(var_nor,0.)).xyz);
-				nor=normalize(nor+tex*.2);
+				nor=normalize(nor+tex*.3);
 				vec3 eye=normalize((vec4(uni_eye,0.)-var_mat*vec4(var_pos,0.)).xyz);
 				vec3 lig=normalize(vec3(0.,1.,1.));
 				float dif1=cl(dot(nor,normalize(lig)));
